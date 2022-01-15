@@ -180,9 +180,15 @@ textarea {
 
 /* media query mobile application */
 @media only screen and (max-width: 688px) {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+    scroll-behavior: smooth;
+  }
   nav {
     flex-direction: column-reverse;
-    width: 100%;
+    max-width: 100%;
     padding: 0;
     align-items: center;
   }
@@ -208,7 +214,7 @@ textarea {
   }
 }
 /* media query for i pad  */
-@media only screen and (min-width: 688px) and (max-width: 992px) {
+@media only screen and (min-width: 689px) and (max-width: 992px) {
   .main-collections {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 0;
